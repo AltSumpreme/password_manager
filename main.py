@@ -5,20 +5,21 @@ import json
 FONT_NAME = "Courier"
 YELLOW = "#f7f5dd"
 BLUE='#1c6399'
+Green='#00FF00'
 window=Tk()
 window.config(padx=20,pady=20,bg=YELLOW)
 window.title("Password Manager")
-canvas=Canvas(width=200,height=200,bg=YELLOW,highlightthickness=0)
-image_path = r"C:\Users\user\OneDrive\Documents\password-manager-start\logo.png"
-image = PhotoImage(file=image_path)
-canvas.create_image(100,100,anchor=CENTER,image=image)
-canvas.grid(column=1,row=0)
+#The_heading
+heading=Label(text="Password Manager",bg=YELLOW,fg=BLUE,font=((FONT_NAME ,50,"bold")))
+heading.grid(column=1,row=0)
+# The labels
 website_label=Label(text="Website:",bg=YELLOW,fg=BLUE,font=(FONT_NAME ,10,"bold"))
 website_label.grid(row=1,column=0)
 email_label=Label(text="Email/Username:",bg=YELLOW,fg=BLUE,font=(FONT_NAME ,10,"bold"))
 email_label.grid(row=2,column=0)
 password_manager=Label(text="Password:",bg=YELLOW,fg=BLUE,font=(FONT_NAME ,10,"bold"))
 password_manager.grid(row=3,column=0)
+#dialog boxes
 website_entry=Entry(width=35)
 website_entry.grid(column=1,row=1,columnspan=2)
 email_entry=Entry(width=35)
@@ -56,11 +57,12 @@ def save():
         finally:
          website_entry.delete(0,END)
          password_entry.delete(0,END)
+#Function for creating a password
 def pass_create():
 
     password_entry.delete(0,END)
     password_entry.insert(0,pasword_gen.create_password())
-
+#Mechanism from finding a password
 def find_password():
     website = website_entry.get()
     try:
