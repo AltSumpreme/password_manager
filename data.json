@@ -1,20 +1,7 @@
+// The output looks somewhat like this
 {
-    "ebay": {
-        "rosh123@gmail.com": "G4&&G!0Ln%"
+    "website": {
+        "email_address": "password"
     },
-    "amazon": {
-        "rosh123@gmail.com": "iK4rM6**&%"
-    },
-    "youtube": {
-        "rosh123@gmail.com": "^86%*eVyN%"
-    },
-    "gmail": {
-        "rosh123@gmail.com": "v*j1*!e6^w"
-    },
-    "twitter": {
-        "anantukid123@gmail.com": "K%#q#52Sd#"
-    },
-    "Linkdeln": {
-        "reuben123@gmail.com": "L*A88@E%t#"
-    }
+
 }
