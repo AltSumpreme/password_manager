@@ -1,4 +1,4 @@
-                                                                        ## Password Manager 
+## Password Manager 
 
 Welcome to the Password Manager application! This simple yet effective password manager is built using Tkinter for the graphical user interface and stores password data in a JSON file. The application provides a secure way to manage and organize your passwords, ensuring that you can access your accounts easily while maintaining the confidentiality of your sensitive information.
   
